@@ -1,5 +1,5 @@
 const { usersMock } = require("../mocks/users-mocks");
-
+const { _findUsers } = require("../models/users-models")
 //service business logic
 async function getUsers() {
   let resp = {
@@ -9,7 +9,7 @@ async function getUsers() {
   };
 
   try {
-    let users = ([] = await usersMock());
+    let users = ([] = await _findUsers());
 
     if (users && users.length) {
       resp.data.users = users;
