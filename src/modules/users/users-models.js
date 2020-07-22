@@ -1,4 +1,4 @@
-const users = require("../schema/users-schema");
+const users = require("./schemas/users-schema");
 
 async function _findUsers() {
   return await users.find({}).exec();

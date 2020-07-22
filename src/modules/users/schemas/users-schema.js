@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
-const Schema = mongoose.Schema
+const { Schema }  = mongoose
 
 const user = new Schema({
-    name : String
+    name : {type: String, required: true}
 })
 
 module.exports =  mongoose.model('Users', user)
