@@ -1,4 +1,4 @@
-const { getUsers } = require("../services/users-services");
+const { getUsers } = require("./users-services");
 
 //controller receive request of client
 async function getAllUsers(req, res) {

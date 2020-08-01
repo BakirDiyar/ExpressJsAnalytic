@@ -1,5 +1,5 @@
 const express = require("express");
-const { Router } = express;
+const router = express.Router();
 
 //export only router for create the other routers
-module.exports = Router;
+module.exports = router;
